@@ -1,6 +1,6 @@
 
 body{
-  background-image: url(../img/W73SJDWQAJ.jpg);   /*Картинка На фоне сайта*/
+  background-image: url(../img/W73SJDWQAJ.jpg);   
   font-family: 'Raleway', sans-serif;
       color: #fff;
 
@@ -12,9 +12,9 @@ p{
 }
 a { 
   font-size: 28px;
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    text-decoration: none; 
    } 
-/*СТИЛИ ДЛЯ ФОРМЫ РЕГИСТРАЦИИ И ОБРАТНОЙ СВЯЗИ*/
+
 form { max-width:420px; margin:50px auto;font-size: 18px; }
 
 .feedback-input {
