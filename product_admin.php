@@ -43,13 +43,13 @@ if (isset($_POST["Name"])) {
 <div class="sea">
 <form action="" method="post">
         Введите ваш ID:
-        <input type="text" name="ID" class="feedback-input">
+        <input type="text" name="ID" class="feedback-input" required>
 
        Введите ваше Имя:
-       <input type="text" name="Name" class="feedback-input">
+       <input type="text" name="Name" class="feedback-input" required>
 
    Введите вашу Фамилию:
-       <input type="text" name="Fname" class="feedback-input">
+       <input type="text" name="Fname" class="feedback-input" required>
 
 
 
@@ -61,7 +61,7 @@ if (isset($_POST["Name"])) {
 
 <form name="search" method="post" action="search.php">
 Введите данные
-    <input type="search" name="query" class="feedback-input">
+    <input type="search" name="query" class="feedback-input" required>
     <button type="submit">Найти</button> 
 </form>
 </div>
