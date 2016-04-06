@@ -3,8 +3,7 @@
 <head>
 <title>CMS PANEL</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>

@@ -3,9 +3,10 @@
 <head>
 <title>CMS PANEL</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
 </head>
 <body>
 <?php
@@ -34,40 +35,7 @@ if (isset($_POST["Name"])) {
 <a class="btn btn-primary" href="product_admin.php" role="button">На главную</a>
 
 
-
-<div class="container">
-	<div class="row">
-
-		
-	
-<div class="sea">
-<form action="" method="post">
-        Введите ваш ID:
-        <input type="text" name="ID" class="feedback-input" required>
-
-       Введите ваше Имя:
-       <input type="text" name="Name" class="feedback-input" required>
-
-   Введите вашу Фамилию:
-       <input type="text" name="Fname" class="feedback-input" required>
-
-
-
-       <input type="submit" value="Добавить Данные">
-
-
-  
-</form>
-
-<form name="search" method="post" action="search.php">
-Введите данные
-    <input type="search" name="query" class="feedback-input" required>
-    <button type="submit">Найти</button> 
-</form>
-</div>
-</div>
-</div>
-
+<div class="test">
 <?php
 //Удаление
 if (isset($_GET['del'])) {
@@ -87,4 +55,65 @@ while ($result = mysql_fetch_array($sql)) {
 
 ?>
 
+</div>
+<div class="container">
+
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Добавление данных</h1>
+<form action="" method="post">
+        <div class="input-container">
+        <input type="text" name="ID" required>
+        <label for="Username">Введите ваш ID</label>
+        <div class="bar"></div>
+      </div>
+
+
+       <div class="input-container">
+       <input type="text" name="Name" required>
+      <label for="Username">Введите ваше имя</label>
+        <div class="bar"></div>
+      </div>
+
+      <div class="input-container">         
+       <input type="text" name="Fname" required>
+      <label for="Username">Введите вашу фамилию</label>
+       <div class="bar"></div>
+      </div>
+
+
+ <div class="button-container">
+        <button><span>Go</span></button>
+      </div>
+  
+</form>
+
+
+ </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Поиск
+      <div class="close"></div>
+    </h1>
+    <form name="search" method="post" action="search.php">
+<div class="input-container">
+    <input type="search" name="query"required>
+     <label for="Username">Введите данные</label>
+       <div class="bar"></div>
+     
+    </div>
+  <div class="button-container">
+        <button><span>Найти</span></button>
+      </div>
+
+</form>
+  </div>
+</div>
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
 </body>
