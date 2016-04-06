@@ -83,7 +83,7 @@ while ($result = mysql_fetch_array($sql)) {
 
 
  <div class="button-container">
-        <button><span>Go</span></button>
+        <button><span>Добавить</span></button>
       </div>
   
 </form>
