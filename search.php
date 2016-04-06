@@ -72,13 +72,28 @@ function search ($query)
 
     return $text; 
 } 
+
 ?>
-<?php 
+
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+  <div class="input-container">
+  <?php 
 if (!empty($_POST['query'])) { 
     $search_result = search ($_POST['query']); 
     echo $search_result; 
 }
-?>
+?>    
+      </div>
+       <div class="button-container">
+        <button><span><a href="product_admin.php">На главную</a></span></button>
+      </div>
+    </form>
+  </div>
+
+
+
 
 </body>
 </html>

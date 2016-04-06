@@ -31,9 +31,11 @@ if (isset($_POST["Name"])) {
 }
 ?>
  
-
-<a class="btn btn-primary" href="product_admin.php" role="button">На главную</a>
-
+<div class="input-container">
+ <div class="button-container">
+        <button><span><a href="product_admin.php">На главную</a></span></button>
+      </div>
+</div>
 
 <div class="test">
 <?php
@@ -105,7 +107,6 @@ while ($result = mysql_fetch_array($sql)) {
   <div class="button-container">
         <button><span>Найти</span></button>
       </div>
-
 </form>
   </div>
 </div>
