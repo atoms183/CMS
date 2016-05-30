@@ -1,5 +1,6 @@
 body {
-  background: rgb(222, 231, 236);
+  background-color: rgba(66, 192, 212, 0.57);
+  background-image: url("http://www.transparenttextures.com/patterns/batthern.png");
   color: #666666;
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
   font-size: 14px;
